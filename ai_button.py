@@ -22,11 +22,6 @@ def button_callback(channel):
     print("ボタンが押された回数:", button_pressed_count)
     print("ボタンが押された日時:", current_datetime)
 
-    # APIキーを設定
-    openai.api_key = (
-        "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"  # 前述で発行したAPIキーに置き換えてください
-    )
-
     # GPT-3.5-turboモデルを使ってチャットの回答を生成するリクエストを作成
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
